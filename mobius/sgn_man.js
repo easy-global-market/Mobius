@@ -174,6 +174,8 @@ function request_noti_http(nu, ri, bodyString, bodytype, xm2mri) {
         }
     };
 
+    console.log("calling notification endpoint with following options:")
+    console.log(options);
     function response_noti_http(res) {
         res.on('data', function (chunk) {
             bodyStr += chunk;
